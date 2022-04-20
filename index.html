@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <title>Album example · Bootstrap v5.1</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png" />
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
+            integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <meta name="theme-color" content="#7952b3" />
+
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <header>
+            <div class="collapse bg-dark" id="navbarHeader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7 py-4">
+                            <h4 class="text-white">About</h4>
+                            <p class="text-muted">
+                                Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social
+                                networking sites or contact information.
+                            </p>
+                        </div>
+                        <div class="col-sm-4 offset-md-1 py-4">
+                            <h4 class="text-white">Contact</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                                <li><a href="#" class="text-white">Email me</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="me-2" fill="#fff">
+                            <path
+                                id="icon:1"
+                                class="st3"
+                                d="M3.04,12.26l3.52-4.24c0.61-1.05,2.09-1.05,2.7,0l3.52,4.24c0.61,1.06-0.14,2.4-1.35,2.4H4.39
+		C3.18,14.66,2.43,13.32,3.04,12.26z M1.4,5.46C0.57,5.81,0.35,7.18,0.92,8.53s1.7,2.16,2.54,1.81c0.83-0.35,1.05-1.72,0.49-3.06
+		S2.24,5.11,1.4,5.46z M7.14,3.48c0.41,1.4,0.04,2.74-0.83,2.99C5.44,6.71,4.4,5.77,3.99,4.37S3.95,1.63,4.82,1.38
+		C5.69,1.14,6.72,2.07,7.14,3.48z M12.06,7.27c-0.57,1.35-0.35,2.72,0.49,3.06c0.83,0.35,1.97-0.46,2.54-1.81
+		c0.57-1.35,0.35-2.72-0.49-3.06C13.76,5.11,12.62,5.93,12.06,7.27z M11.18,1.38c0.87,0.25,1.24,1.59,0.83,2.99
+		s-1.45,2.34-2.32,2.09C8.82,6.22,8.45,4.88,8.86,3.48S10.31,1.14,11.18,1.38z"
+                            />
+                        </svg>
+                        <strong>Animals</strong>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container-fluid g-0">
+                <div id="probandoCarrusel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://picsum.photos/id/1020/1250/400" class="d-block w-100" alt="…" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/id/1062/1250/400" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/id/1024/1250/400" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#probandoCarrusel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#probandoCarrusel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="album py-5">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="https://picsum.photos/id/1069/600/370" class="d-block w-100" alt="..." />
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#probandoModal1">Más información</button>
+
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="https://picsum.photos/id/1074/600/370" class="d-block w-100" alt="..." />
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#probandoModal2">Más información</button>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="https://picsum.photos/id/200/600/370" class="d-block w-100" alt="..." />
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#probandoModal3">Más información</button>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="https://picsum.photos/id/219/600/370" class="d-block w-100" alt="..." />
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#probandoModal4">Más información</button>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="https://picsum.photos/id/237/600/370" class="d-block w-100" alt="..." />
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#probandoModal5">Más información</button>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="https://picsum.photos/id/433/600/370" class="d-block w-100" alt="..." />
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#probandoModal6">Más información</button>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="https://picsum.photos/id/577/600/370" class="d-block w-100" alt="..." />
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#probandoModal7">Más información</button>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="https://picsum.photos/id/582/600/370" class="d-block w-100" alt="..." />
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#probandoModal8">Más información</button>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="https://picsum.photos/id/584/600/370" class="d-block w-100" alt="..." />
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#probandoModal9">Más información</button>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-muted py-5 bg-dark">
+            <div class="container">
+                <p class="float-end mb-1">
+                    <a href="#">Back to top</a>
+                </p>
+                <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+                <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.1/getting-started/introduction/">getting started guide</a>.</p>
+            </div>
+        </footer>
+
+        <div class="modal fade" id="probandoModal1" tabindex="-1" aria-labelledby="probandoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="probandoModalLabel">Más información</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Primera imagen.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="probandoModal2" tabindex="-1" aria-labelledby="probandoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="probandoModalLabel">Más información</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Segunda imagen.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="probandoModal3" tabindex="-1" aria-labelledby="probandoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="probandoModalLabel">Más información</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tercera imagen.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="probandoModal4" tabindex="-1" aria-labelledby="probandoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="probandoModalLabel">Más información</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Cuarta imagen.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="probandoModal5" tabindex="-1" aria-labelledby="probandoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="probandoModalLabel">Más información</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Quinta imagen.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="probandoModal6" tabindex="-1" aria-labelledby="probandoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="probandoModalLabel">Más información</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Sexta imagen.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="probandoModal7" tabindex="-1" aria-labelledby="probandoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="probandoModalLabel">Más información</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Septima imagen.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="probandoModal8" tabindex="-1" aria-labelledby="probandoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="probandoModalLabel">Más información</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Octava imagen.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="probandoModal9" tabindex="-1" aria-labelledby="probandoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="probandoModalLabel">Más información</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Novena imagen.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script>
+            function setup() {
+                createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1).style("position", "fixed");
+                noStroke();
+            }
+            function draw() {
+                background(230);
+                textSize(40);
+                text("🐻", mouseX, mouseY);
+                fill(55);
+                ellipse(mouseX + 28, mouseY + 18, 40, 5);
+            }
+            function windowResized() {
+                resizeCanvas(windowWidth - 50, windowHeight - 50);
+            }
+        </script>
+    </body>
+</html>
